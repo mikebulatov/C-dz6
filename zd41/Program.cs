@@ -1,25 +1,19 @@
-﻿bool Even(int num)
-{// фнукция определяет четное число или нет.
-if (num%2>0)return false;
-else return true;
-}
-
-Console.WriteLine("Задача 34. Программа, которая покажет количество чётных чисел в массиве,заполненномы случайными положительными трёхзначными числами.");
+﻿//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+Console.WriteLine("Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.");
 Console.Write("Введите колличесво элементов маассива:");
 int [] mass=new int [Convert.ToInt32(Console.ReadLine())];
 
-Console.Write("Сформированный массив:");
+Console.WriteLine("Введите элементы массива:");
 for(int i=0; i<mass.Length; i++)
 {
-    mass[i]= new Random().Next(100,999);
-    Console.Write(mass[i]);
-    Console.Write(" ");
+    mass[i]= Convert.ToInt32(Console.ReadLine());
+
 }
 
-Console.WriteLine();
+//Console.WriteLine();
 int CountEven =0;
 for(int i=0; i<mass.Length; i++)
 {
-if (Even(mass[i]))CountEven++;
+if (mass[i]>0)CountEven++;
 }
-Console.WriteLine($"Число четных элеменов массива:{CountEven}");
+Console.WriteLine($"{CountEven} чисел больше 0 ввёл пользователь");
