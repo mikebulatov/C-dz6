@@ -3,15 +3,15 @@
 
 Console.WriteLine("Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.");
 Console.Write("Введите k1:");
-int k1=Convert.ToInt32(Console.ReadLine());
+double k1=Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b1:");
-int b1=Convert.ToInt32(Console.ReadLine());
+double b1=Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите k2:");
-int k2=Convert.ToInt32(Console.ReadLine());
+double k2=Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b2:");
-int b2=Convert.ToInt32(Console.ReadLine());
+double b2=Convert.ToDouble(Console.ReadLine());
 
-float x = (b2-b1)/(k1-k2);
-float y = k1*(b2-b1)/(k1-k2)+b1;
+double x = (b2-b1)/(k1-k2);
+double y = k1*(b2-b1)/(k1-k2)+b1;
 
 Console.WriteLine($"Координаты точки пересечения функций y={k1}x+{b1} и y={k2}x+{b2} это x={x} y={y}");
