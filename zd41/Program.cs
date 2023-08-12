@@ -9,7 +9,6 @@ for(int i=0; i<mass.Length; i++)
     mass[i]= Convert.ToInt32(Console.ReadLine());
 
 }
-
 //Console.WriteLine();
 int CountEven =0;
 for(int i=0; i<mass.Length; i++)
